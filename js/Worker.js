@@ -16,10 +16,20 @@ class Worker{
         this.surname = surname;
         this.hourRate = hourRate;
         this.hours = hours;
+        this.tax = 0;
+    }
+    getSalaryNetto(){
+        return (this.getSalary()-(this.getSalary()*(this.tax/100)));
     }
     getSalary(){
         return this.hourRate*this.hours
     }
+
+    setTax(tax){
+        this.tax = tax;
+    }
+
+    
 
     increaseSalary(i){
         this.hourRate += i;
@@ -28,28 +38,17 @@ class Worker{
     getName(){
         return this.name;
     }
-    setName(name){
-        this.surname = name;
-    }
 
     getSurname(){
         return this.surname;
-    }
-    setSurname(surname){
-        this.surname = surname;
     }
 
     getRate(){
         return this.hourRate;
     }
-    setRate(rate){
-        this.hourRate = rate;
-    }
 
     getHours(){
         return this.hours;
     }
-    setHours(hours){
-        this.hours = hours;
-    }
+
 }

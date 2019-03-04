@@ -24,3 +24,5 @@ console.log(worker.getHours()); // afișează 176
 console.log(worker.getSalary()); //afișează 1760 = 10*176
 worker.increaseSalary(2); //mărește hourRate cu 2
 console.log(worker.getSalary()); //afișează 2112 = 12*176
+worker.setTax(18); //setează impozitul pe salariu la 18%
+console.log(worker.getSalaryNetto()); 
