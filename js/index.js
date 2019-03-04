@@ -31,7 +31,7 @@ var workers = [3];
 workers[0] = new Worker("Ion", 'Creangă', 10, 176);
 workers[1] = new Worker("Michai", 'Crihan', 8, 200);
 workers[2] = new Worker("Maria", 'Lisevici', 12, 157);
-for(let i=0; i<3; i++){
+for(let i =     0; i < workers.length; i++){
     console.log(workers[i].getName());
     console.log(workers[i].getSurname());
     console.log(workers[i].getRate());

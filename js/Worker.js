@@ -16,7 +16,7 @@ class Worker{
         this.surname = surname;
         this.hourRate = hourRate;
         this.hours = hours;
-        this.tax = 0;
+        //this.tax = 0;
     }
     getSalaryNetto(){
         return (this.getSalary()-(this.getSalary()*(this.tax/100)));
